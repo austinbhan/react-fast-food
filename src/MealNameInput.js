@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function MealNameInput({ setMealName }) {
+export default function OrderNameInput({ setOrderName }) {
   return (
     <section>
             What is your meal name?
-      < input onChange={e => setMealName(e.target.value)} />
+      < input onChange={e => setOrderName(e.target.value)} />
     </section>
   );
 }

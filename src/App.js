@@ -1,18 +1,18 @@
 import './App.css';
 import { useState } from 'react';
-import MealNameInput from './MealNameInput';
+import OrderNameInput from './MealNameInput';
 
 function App() {
-  const [mealName, setMealName] = useState('');
+  const [orderName, setOrderName] = useState('');
 
   return (
     <>
       <h1>
-      Meal Name; {mealName}.
+      Meal Name; {orderName}.
       </h1>
       <div className="App">
         <div id="pictures">
-          <MealNameInput setMealName={setMealName}/>
+          <OrderNameInput orderName={setOrderName}/>
         </div>
         <div id="forms">
 
