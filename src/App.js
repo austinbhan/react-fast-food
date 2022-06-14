@@ -12,10 +12,10 @@ function App() {
       </h1>
       <div className="App">
         <div id="pictures">
-          <OrderNameInput orderName={setOrderName}/>
+          
         </div>
         <div id="forms">
-
+          <OrderNameInput orderName={setOrderName}/>
         </div>
         <div id="display-text">
 
