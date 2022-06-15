@@ -5,6 +5,7 @@ import MealDropDown from './MealDropDown';
 import Meal from './Meal';
 import DrinkDropDown from './DrinkDropDown';
 import SideDropDown from './SideDropDown';
+import InstructionForm from './InstructionForm';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   const [mealName, setMealName] = useState('main-1');
   const [drinkName, setDrinkName] = useState('drink-1');
   const [sideName, setSideName] = useState('side-1');
+  const [instructions, setInstructions] = useState([]);
 
   return (
     <>
@@ -33,6 +35,7 @@ function App() {
         </div>
         <div id="forms">
           <OrderNameInput setOrderName={setOrderName}/>
+          <InstructionForm instructions={instructions} setInstructions={setInstructions}/>
         </div>
         <div id="display-text">
 
