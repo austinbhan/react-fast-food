@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function Meal({ main }) {
+export default function Meal({ mealName, drinkName }) {
   return (
     <div className="meal">
       <section>
-        <img src={`${main}.jpg`} />
-        {/* <img src={`${side}.jpg`} />
-        <img src={`${drink}.jpg`} /> */}
+        <img src={`./${mealName}.jpg`} />
+        <img src={`${drinkName}.jpg`} />
+        {/* <img src={`${drink}.jpg`} /> */}
       </section>
     </div>
   );

@@ -3,28 +3,32 @@ import { useState } from 'react';
 import OrderNameInput from './MealNameInput';
 import MealDropDown from './MealDropDown';
 import Meal from './Meal';
+import DrinkDropDown from './DrinkDropDown';
 
 
 function App() {
   const [orderName, setOrderName] = useState('');
   const [mealName, setMealName] = useState('main-1');
+  const [drinkName, setDrinkName] = useState('drink-1');
 
   return (
     <>
-      <h1>
-      Meal Name; {orderName}.
-      </h1>
       <div className="App">
+        <h1>
+      Meal Name; {orderName}.
+        </h1>
         <div id="pictures">
           <Meal 
             mealName={mealName}
+            drinkName={drinkName}
           />
         </div>
         <div id="dropdowns">
           <MealDropDown setMealName={setMealName}/>
+          <DrinkDropDown setDrinkName={setDrinkName}/>
         </div>
         <div id="forms">
-          <OrderNameInput orderName={setOrderName}/>
+          <OrderNameInput setOrderName={setOrderName}/>
         </div>
         <div id="display-text">
 
