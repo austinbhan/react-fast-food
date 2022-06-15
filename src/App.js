@@ -6,6 +6,7 @@ import Meal from './Meal';
 import DrinkDropDown from './DrinkDropDown';
 import SideDropDown from './SideDropDown';
 import InstructionForm from './InstructionForm';
+import InstructionList from './InstructionList';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <div id="forms">
           <OrderNameInput setOrderName={setOrderName}/>
           <InstructionForm instructions={instructions} setInstructions={setInstructions}/>
+          <InstructionList instructions={instructions}/>
         </div>
         <div id="display-text">
 
